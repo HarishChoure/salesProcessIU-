@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+        <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    </head>
+    <body>
+        <!-- Main container -->
+        <div class="main-container">
+            <!-- event button container -->
+            <button onclick="showChatbot()" class="btn-design">Chatbot</button>
+            <!-- bot container -->
+            <div id="bot-container" class="bot-design-container">
+                <!-- bot name container -->
+                <div class="bot-header">
+                    <div class="bot-header-heading">
+                        Sales process chatbot
+                    </div>
+                </div>
+                <!-- bot response container -->
+                <div class="bot-response">
+                    <div class="chat-container" id="response-container"></div>
+                </div>
+                <!-- bot input container -->
+                <div class="bot-input">
+                    <textarea id="user-input" class="textarea-container" placeholder="Enter your query"></textarea>
+                    <button type="button" class="textarea-button" onclick="sendMessage()"><i class="fas fa-paper-plane"></i></button>
+                </div>
+            </div>
+            <script src="index.js"></script>
+        </div>
+    </body>
+</html>
